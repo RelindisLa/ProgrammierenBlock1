@@ -2,7 +2,7 @@ public class BruttoNetto {
     public static void main(String[] args) {
 
         float netPrice = 100;
-        int tax = -1; //prozent
+        int tax; //prozent
         int maxTax = 50; //euro
 
         int tax_class = 1;
@@ -57,10 +57,24 @@ public class BruttoNetto {
 
         System.out.println("grossPrice = " + grossPrice);
 
+        switch (tax_class) {
+            case 1:         //wenn dieser Fall, dann führe folgendes aus:
+                tax = 20;
+                break;
+            case 2:
+                tax = 16;
+                break;
+            case 3:
+                tax = 8;
+                break;
+            default:  // sonst mach folgendes
+                tax = 0;
+                System.out.println("Lieber User, diese Steuerklasse ist unbekannt!");
+        }
+
 
         int schulnote = 4;
         int language = 2; // 1 Deusch, 2 English
-
 
         if (schulnote == 1 && language == 1){
             System.out.println("Sehr gut");
@@ -85,8 +99,6 @@ public class BruttoNetto {
         } else {
             System.out.println("Lieber Schüler, gib bitte deine Note bekannt");
         }
-
-
 
 
     }
