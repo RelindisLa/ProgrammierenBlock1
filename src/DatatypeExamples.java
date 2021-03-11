@@ -12,8 +12,8 @@ public class DatatypeExamples {
 
         ergebnis = laenge * breite; // initialisierung auf der rechten seite : read/read
 
-        System.out.println("Die Fläche lautet:" + ergebnis + "cm²");
-        System.out.println("Die Fläche von: " + laenge + " und " + breite + " lautet: " + ergebnis + "cm" );
+        System.out.println("Die Fläche lautet: " + ergebnis + "cm²");
+        System.out.println("Die Fläche von: " + laenge + " und " + breite + " lautet: " + ergebnis + "cm²" );
 
 
         int a, b, c;
@@ -24,6 +24,9 @@ public class DatatypeExamples {
         ergebnis = a/b;
         System.out.println("result = " + ergebnis);
         ergebnis = a = b * 3;
+        System.out.println("result = " + ergebnis);
+        System.out.println("result = " + a);
+        ergebnis = a/b;
         System.out.println("result = " + ergebnis);
 
 
