@@ -3,14 +3,14 @@ public class BruttoNetto {
 
         float netPrice = 100;
         int tax; //prozent
-        int maxTax = 50; //euro
+        int maxTax = 10; //euro
 
-        int tax_class = 1;
+        int tax_class = 2;
 
         if (tax_class == 1) {
             tax = 16;
         } else if (tax_class == 2) {
-            tax = 8;
+            tax = 10;
         } else if (tax_class == 3) {
             tax = 8;
         } else {
@@ -74,6 +74,8 @@ public class BruttoNetto {
         double grossPrice = netPrice + calulatiedTax;
         System.out.println("grossPrice = " + grossPrice);
 
+        //TODO: Gib den Grad der Schulstufe an in Englisch oder Deutsch:
+
         printNameToGrade(1);
         printNameToGrade(2);
         printNameToGrade(3);
@@ -86,7 +88,7 @@ public class BruttoNetto {
           // public static = fix, (void/Datentyp = Rückgabetyp),
 
             // Ihre Aufgabe: Name für Schulnote ausgeben.
-            int language = 2; // 1 Deusch, 2 English
+            int language = 1; // 1 Deusch, 2 English
 
             if (grade == 1 && language == 1) {
                 System.out.println("Sehr gut");
